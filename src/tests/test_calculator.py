@@ -21,3 +21,9 @@ def test_subtraction():
     my_calculator = Calculator()
     assert my_calculator.subtraction(5, 2) == 3
 
+
+# Test fautif de l'addition pour la question 1
+def test_addition_erreur():
+    my_calculator = Calculator()
+    assert my_calculator.addition(2, 3) == 6
+
