@@ -1,0 +1,19 @@
+name: CD
+
+on:
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    steps:
+      - name: Deploy on VM
+        run: |
+          cd ~/LOG430-Labo00
+          git pull
+          docker compose down || true
+          docker compose up -d --build
