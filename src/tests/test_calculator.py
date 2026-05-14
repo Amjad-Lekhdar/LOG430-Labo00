@@ -21,9 +21,3 @@ def test_subtraction():
     my_calculator = Calculator()
     assert my_calculator.subtraction(5, 2) == 3
 
-    
-# Test fautif de la soustraction
-def test_subtraction():
-    my_calculator = Calculator()
-    assert my_calculator.subtraction(5, 2) == 4
-
